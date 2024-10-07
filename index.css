@@ -1,0 +1,99 @@
+img {
+    height:350px;
+    width:350px;
+    background-color: transparent;
+    
+}
+
+* {
+    background-color: khaki;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.bananas {
+    display: flex;                
+    justify-content: space-between; 
+    margin-bottom: 20px;         
+}
+
+#header {
+    animation: text-hue-rotate 6s infinite forwards
+}
+
+
+#heart {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+#banana {
+    display: block;               
+    margin: 0 auto;              
+}
+
+#heart:hover {
+    animation: enlarge-heart 2s forwards;
+}
+
+#heart:active {  
+    animation: hue-rotate 5s forwards;
+    height:300px;
+    width:300px;
+    margin-bottom: 0;
+}
+
+header {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#banana:hover {
+    animation: grayscale 3.5s forwards;
+}
+
+#banana:active {    
+    animation: hue-rotate 5s forwards;
+}
+
+#where-are-bananas {
+    border: double;
+}
+
+#types-of-bananas {
+    border: solid;
+}
+
+#banana-facts {
+    border: dotted;
+}
+
+@keyframes hue-rotate {
+    from {filter:hue-rotate(0deg)}
+    to {filter:hue-rotate(360deg)}
+}
+
+@keyframes text-hue-rotate {
+    0% { color: red; }
+    17% { color: orange; }
+    32% { color: yellow; }
+    50% { color: green; }
+    67% { color: blue; }
+    84% { color: purple; }
+    100% { color: red; }
+}
+
+@keyframes enlarge-heart {
+    from {height: 200px; width: 200px; margin-bottom: 100;}
+    to {height: 300px; width: 300px; margin-bottom: 0;}
+}
+
+@keyframes grayscale {
+    from {filter:grayscale(0%)}
+    to {filter:grayscale(100%)}
+}
+
